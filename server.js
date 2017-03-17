@@ -65,7 +65,7 @@ var htmlTemplate=`
         <title>
             ${title}
         </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width-device-width, initial-scale=1" />
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
@@ -95,7 +95,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/:articleName', function(req,res){
+app.get('/:articleName', function(req, res){
     //articleName=article-One;
     //articles[articleName]={} content object for article one
     var articleName=req.params.articleName;
