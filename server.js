@@ -56,11 +56,9 @@ var htmlTemplate=`
         </div>
     </body>
 </html>
-;
-   return htmlTemplate;
+`;
+return htmlTemplate;
 }
-
-
 
 
 app.get('/', function (req, res) {
@@ -68,7 +66,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function(req,res){
-    res.(createTemplate(articleOne));
+    res.send(createTemplate(articleOne));
 });
 
 app.get('/article-two', function(req,res){
