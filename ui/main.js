@@ -16,10 +16,11 @@ button.onclick=function(){
                 var span=document.getElementById("count");
                 span.innerHTML=counter.toString();
           }
-          //Not done yet
       }
+          //Not done yet
+      };
       //Make the request
       request.open('GET','http://bhanu123yadav.imad.hasura-app.io/counter',true);
       request.send(null);
-  };
+
 };
