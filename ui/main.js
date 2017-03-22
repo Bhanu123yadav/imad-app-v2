@@ -20,5 +20,5 @@ button.onclick=function(){
   
   //Make the request
   request.open('GET','http://bhanu123yadav.imad.hasura-app.io/counter', true);
-  request.send(null);
+  request.send(null);   
 };
